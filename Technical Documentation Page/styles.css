@@ -1,0 +1,121 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+.menu {
+    width: 30%;
+    border-right: 2px solid #3498db; 
+    overflow: hidden;
+    height: 100vh;
+    background-color: #ecf0f1;
+}
+
+header.border.title {
+    padding: 20px 25px;
+    background-color: #3498db;
+    color: #fff;
+}
+
+.title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: 15px 25px;
+}
+
+.menu header .title {
+    padding: 15px 25px;
+}
+
+#main-doc {
+    width: 70%;
+    padding: 20px 45px;
+    background-color: #fff;
+    color: #333;
+}
+
+main {
+    padding-bottom: 20px;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+    color: #3498db;
+    text-indent: 25px;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #2980b9;
+}
+
+ul {
+    padding-left: 0;
+}
+
+.menu a li {
+    padding: 20px 0;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.menu a li:hover {
+    background-color: #d5e8f7;
+}
+
+.border {
+    border-bottom: 1px solid #ddd;
+}
+
+code {
+    padding: 8px;
+    background-color: #f0f8ff;
+    line-height: 1.6;
+    margin-left: 20px;
+}
+
+#intro {
+    cursor: pointer;
+}
+
+#introduction ul,
+#colors ul,
+#text-styles ul {
+    padding-left: 25px;
+}
+
+#introduction ul li,
+#colors ul li,
+#text-styles ul li {
+    margin: 10px 0;
+}
+
+p {
+    padding: 15px 0;
+}
+
+#references a {
+    color: #007bff;
+}
+
+@media (max-width: 750px) {
+    .menu {
+        display: none;
+    }
+
+    #main-doc {
+        width: 100%;
+        padding: 20px;
+    }
+}

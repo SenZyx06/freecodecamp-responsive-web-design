@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Documentation</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <div class="menu">
+      <header class="border title">JAVA Documentation</header>
+      <nav id="navbar">
+        <header>
+        <ul>
+          <a class="nav-link" href="#Introduction"><li class="border">Introduction</li></a>
+          <a class="nav-link" href="#Basic_Syntax"><li class="border">Basic Syntax</li></a>
+          <a class="nav-link"n href="#Data_Types"><li class="border">Data Types</li></a>
+          <a class="nav-link" href="#Identifiers"><li class="border">Identifiers</li></a>
+          <a class="nav-link" href="#Variables"><li class="border">Variables</li></a>
+          <a class="nav-link" href="#Scope_of_Variables"><li class="border">Scope of Variables</li></a>
+          <a class="nav-link" href="#References"><li >References</li></a>
+        </ul>
+        </header>
+      </nav>
+        </div>
+        <main id="main-doc">
+            <section class="main-section" id="Introduction">
+                <header class="title">Introduction</header>
+                <p>Java is one of the most popular and widely used programming language and platform.  It is fast, reliable and secure.</p>
+                <p>Java is a highly popular, object-oriented programming language. This platform independent programming language is utilized for Android development, web development, cloud applications, and many more.</p>
+                <p>Java's programming environment consists of three components:</p>
+                
+                <ol type="1">
+                    <li>Java Development Kit (JDK)</li>
+                    <li>Java Runtime Environment (JRE)</li>
+                    <li>Java Virtual Machine (JVM)</li>
+                </ol>
+            </section>
+
+        <section class="main-section" id="Basic_Syntax">
+            <header class="title">Basic Syntax</header>
+            <p>Java is an OOP, therefore it is the collection of these objects and they communicate through method calls to work together. </p>
+            <h3>Basic Terminologies in Java</h3>
+            
+            <p>1. Class: The class is a blueprint (plan) of the instance of a class (object).</p>
+        <pre><code>
+            class MyJavaProgram    // valid syntax
+            class 1Program         // invalid syntax
+            class My1Program       // valid syntax
+            class $Program         // valid syntax, but discouraged
+            class My$Program       // valid syntax, but discouraged (inner class Program inside the class My)
+            class myJavaProgram    // valid syntax, but discouraged </code></pre>
+            <p>2. Object: The object is an instance of a class. It is an entity that has behavior and state.</p>
+            <code>Main myObj = new Main();</code>
+            <p>where:</p>
+            <code>myObj is an object </code>
+            <p>3. Method: The behavior of an object is the method.</p>
+            <pre><code>public class Main {
+            static void myMethod() {
+                // code to be executed is called method
+            }
+            }</code></pre>
+            <p>4. Instance variables: Every object has its own unique set of instance variables. The state of an object is generally created by the values that are assigned to these instance variables or in short, instantiated.</>
+            <p>Let's go back to number to, the object. We can see this process:</p>
+            <code>Main myObj = new Main();</code>
+            <p>This is the process of instantiating and the myObj is an instantiated variable</p>
+        </section>
+
+        <section class="main-section" id="Data_Types">
+            <header class="title">Data Types</header>
+            <p>Data types in Java are of different sizes and values that can be stored in the variable that is made as per convenience and circumstances to cover up all test cases. Java has two categories in which data types are segregated. </p>
+            <ol type="1">
+                <li>Primitive Data type</li>
+                <li>Non-primitive Data type or Reference Data type</li>
+                </ol>
+            <p>Primitive data are only single values and have no special capabilities.  There are 8 primitive data types. They are depicted below: </p> 
+            <code> boolean, byte, char, short, int, long, float, double</code> <br><br>     
+
+            <p>The Reference Data Types will contain a memory address of variable values because the reference types won’t store the variable value directly in memory. They are depicted below: </p> 
+            <code> Strings,Class, Object, Interface, Array, etc.</code><br><br>
+        </section>
+
+        <section class="main-section" id="Identifiers">
+            <header class="title">Identifiers</header>
+            <p>In Java, identifiers are used for identification purposes. Java Identifiers can be a class name, method name, variable name, or label. </p>
+            <p></p>
+        </section>
+        <section class="main-section" id="Variables">
+            <header class="title">Variables</header>
+            <p>Java variable is a name given to a memory location. It is the basic unit of storage in a program.</p>
+            <p>Declaring variables can be depicted this way.</p>
+            <code>int num</code>
+            <p>Where int is its data type and num is its data name.</p>
+            <h3>How to Initialize Variables in Java?</h3>
+            <p>It can be perceived with the help of 3 components that are as follows:</p>
+            <ul>
+                <li>datatype: Type of data that can be stored in this variable.</li>
+                <li>variable_name: Name given to the variable.</li>
+                <li>value: It is the initial value stored in the variable.</li>
+            <h3>Types of Variables in Java</h3>
+            </ul>
+            <ol>
+                <li>Local Variables</li>    
+                <li>Instance Variables</li>
+                <li>Static Variables</li>
+        </section>
+        <section class="main-section" id="Scope_of_Variables">
+            <header class="title">Scope of Variables</header>
+            <p>in Java, all identifiers are lexically (or statically) scoped, i.e.scope of a variable can determined at compile time and independent of function call stack. 
+Java programs are organized in the form of classes.</p>
+<p>Every class is part of some package. Java scope rules can be covered under following categories.</p>
+            <pre><strong>Modifier      Package  Subclass  World</strong>
+
+public          Yes      Yes     Yes
+
+protected       Yes      Yes     No
+
+Default (no
+modifier)       Yes       No     No
+
+private         No        No     No</pre>
+        </section>
+
+        <section class="main-section" id="References">
+            <header class="title">References</header>
+            <p>To learn more, visit  <a href="https://www.geeksforgeeks.org/java/?ref=lbp">Geeksforgeeks</a> for more information</p>
+        </section>
+        <main>
+    </body>
+</html>
