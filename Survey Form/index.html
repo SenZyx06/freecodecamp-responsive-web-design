@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orchestra Musician Application Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="heading">
+    <h1 id=title>Orchestra Musician Application Form</h1>
+    <p id="description">Are you the one we're searching for? Do you have the skills? Then come fill up and let your notes be heard!</p>
+    </div>
+    <div id="main">
+        <form id="survey-form">
+        <div id="input-fields">
+            <label id="name-label"><b>Full Name:</b></label>
+            <input id="name" type="name" name="name" class="form" required placeholder="Full Name"><br>
+            <br>
+            <label id="email-label"><b>Email:</b></label>
+            <input id="email" type="email" name="email" class="form" required placeholder="example@mail.com"><br>
+            <br>
+            <label id="number-label"><b>Age:</b></label>
+            <input id="number" type="number" name="number" class="form" min="5" max="99" placeholder="8+">
+         </div>
+         <div id="dropdown-used"><br>
+            <label id="dropdown-label"><strong>Instrument used: </strong></label><br>
+            <select id="dropdown" name="code-lang" class="form">
+                <option value="Bass Drum">Bass Drum</option>
+                <option value="Bassoon">Bassoon</option>
+                <option value="Chimes">Chimes</option>
+                <option value="Clarinet">Clarinet</option>
+                <option value="Cello">Cello</option>
+                <option value="Cornet">Cornet (Programming Language)</option>
+                <option value="Double Bass">Double Bass</option>
+                <option value="Euphonium">Euphonium</option>
+                <option value="Flute">Flute</option>
+                <option value="Gong">Gong</option>
+                <option value="Horn">Horn</option>
+                <option value="Oboe">Oboe</option>
+                <option value="Snare Drum">Snare Drum</option>
+                <option value="Timpani">Timpani</option>
+                <option value="Trombone">Trombone</option>
+                <option value="Trumpet">Trumpet</option>
+                <option value="Tuba">Tuba</option>
+                <option value="Viola">Viola</option>
+                <option value="Violin">Violin</option>
+            </select>
+         </div>
+            <div id="dropdown-prefered"><br><br>
+                <label id="preferred-instrument-label"><strong>Preferred Instrument:</strong></label><br>
+                <select id="preferred-instrument" name="preferred-instrument" class="form"><br><br>
+                    <option value="Bass Drum">Bass Drum</option>
+                    <option value="Bassoon">Bassoon</option>
+                    <option value="Chimes">Chimes</option>
+                    <option value="Clarinet">Clarinet</option>
+                    <option value="Cello">Cello</option>
+                    <option value="Cornet">Cornet</option>
+                    <option value="Double Bass">Double Bass</option>
+                    <option value="Euphonium">Euphonium</option>
+                    <option value="Flute">Flute</option>
+                    <option value="Gong">Gong</option>
+                    <option value="Horn">Horn</option>
+                    <option value="Oboe">Oboe</option>
+                    <option value="Snare Drum">Snare Drum</option>
+                    <option value="Timpani">Timpani</option>
+                    <option value="Trombone">Trombone</option>
+                    <option value="Trumpet">Trumpet</option>
+                    <option value="Tuba">Tuba</option>
+                    <option value="Viola">Viola</option>
+                    <option value="Violin">Violin</option>
+                </select>
+            <div id="education-div"><br><br>
+    <label id="education-label"><b>Formal Music Education:</b></label><br>
+    <input type="radio" class="radio-inline" name="education" value="music_school"> Completed Music School<br>
+    <input type="radio" class="radio-inline" name="education" value="music_degree"> Music Degree Holder<br>
+    <input type="radio" class="radio-inline" name="education" value="other_degree"> Other Degree in Music<br>
+    <input type="radio" class="radio-inline" name="education" value="self_taught"> Self-taught Musician<br>
+    <input type="radio" class="radio-inline" name="education" value="workshops"> Workshops and Masterclasses<br>
+</div>
+         <div id="button-area">
+             <br>
+            <label id="job-label"><b>Employment Status:</b></label><br>
+            <input type="radio" class="radio-inline" name="status" value="employed" checked> Full-time job holder.(Employed)<br>
+            <input type="radio" class="radio-inline" name="status" value="parttimer" checked> Half work.(Part-timer)<br>
+            <input type="radio" class="radio-inline" name="status" value="freelancer"> I take short terms.(Freelancer)<br>
+            <input type="radio" class="radio-inline" name="status" value="unemployed"> I currently do not have any job (Unemployed) <br>
+          </div>
+          <div id="day"><br><br>
+            <label id="os-label"><b>What days are you available?</b></label><br>
+            <input type="checkbox" name="day1" value="day"> Monday<br>
+            <input type="checkbox" name="day2" value="day"> Tuesday<br>
+            <input type="checkbox" name="day3" value="day"> Wednesday<br>
+            <input type="checkbox" name="day4" value="day"> Thursday<br>
+            <input type="checkbox" name="day5" value="day"> Friday<br>
+            <input type="checkbox" name="day6" value="day"> Saturday<br>
+            <input type="checkbox" name="day7" value="day"> Sunday<br>
+          </div>
+        <div id="time"><br><br>
+            <label id="os-label"><b>What time are you available?</b></label><br>
+            <input type="checkbox" name="morning" value="morning"> Morning<br>
+            <input type="checkbox" name="noon" value="noon"> Noon<br>
+            <input type="checkbox" name="afternoon" value="afternoon"> Afternoon<br>
+            <input type="checkbox" name="evening" value="evening"> Evening<br>
+            <input type="checkbox" name="late night" value="late night"> Late night<br>
+          </div>
+
+          <div id="ending"><br><br>
+    <h2>Cover Letter</h2>
+    <textarea style="height:120px;" class="form" placeholder="Add a cover letter or anything else you want to share..."></textarea><br><br>
+    <input id="submit" type="submit" class="form">
+</div>
+</body>
+</html>
